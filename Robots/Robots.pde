@@ -28,8 +28,11 @@ void draw() {
     background(0);
     fill(#B43E07);
     ellipse(470, 700, 1200, 200);
+    fill(40);
+    rect(220, 470, 140,140);
+    triangle( 190, 470, 390, 470, 290, 400);
     DHRobot hoferBot = new DHRobot ();
-    hoferBot.drawAt(320, 550, 0.1, 0.1);
+    hoferBot.drawAt(620, 550, 0.1, 0.1);
   } 
 }
 
