@@ -1,5 +1,6 @@
 int scene = 1;
 
+//Draws Canvas
 void setup() {
   //backround
   size (1000, 700);
@@ -7,6 +8,7 @@ void setup() {
   }
 }
 
+//Draws First scene
 void draw() {
   background(0);
   if (scene == 1) {
@@ -27,6 +29,8 @@ void draw() {
     jamieRobot.drawAt(500, 100, 1.0, 1.0);
     hoferBot.drawAt(320, 550, 0.1, 0.1);
   }
+  
+  //Second scene
   if (scene == 2) {
     background(0);
     fill(255);
@@ -45,6 +49,8 @@ void draw() {
     fill(6);
     rect(256, 530, 60, 80);
   }
+  
+  //Third scene
   if (scene == 3) {
     fill(255);
     textSize(20);
@@ -66,7 +72,11 @@ void draw() {
 }
 
 
-
+//Makes the scene change when key is pressed
 void keyPressed () {
   scene += 1;
+  if (scene > 3) { 
+   scene = 1;  
+  }
+  
 }
